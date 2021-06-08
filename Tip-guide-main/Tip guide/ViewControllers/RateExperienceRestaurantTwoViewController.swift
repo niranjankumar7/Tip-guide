@@ -47,7 +47,7 @@ public class RateExperienceRestaurantTwoViewController : UIViewController {
         }
         
         let perc = calculation(n: &x)
-        var tipamt = bill % perc
+        tipamt = bill % perc
 
     }
     

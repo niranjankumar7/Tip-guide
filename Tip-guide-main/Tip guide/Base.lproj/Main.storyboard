@@ -238,7 +238,7 @@
                                 </state>
                                 <connections>
                                     <action selector="displayRoomForImprovementButton:" destination="Hlb-Tl-i7K" eventType="touchUpInside" id="NcZ-Jx-Mkt"/>
-                                    <segue destination="5p6-ba-b6s" kind="show" id="lxf-8h-tpn"/>
+                                    <segue destination="5p6-ba-b6s" kind="show" identifier="showRoomForImprovementRestaurantThree" id="lxf-8h-tpn"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Overall Restaurant rating" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4nT-nw-aVZ">
@@ -269,9 +269,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="UOr-7n-2sX"/>
-                    <connections>
-                        <segue destination="5p6-ba-b6s" kind="show" id="yNb-tl-iZN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBZ-HJ-QkU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,15 +283,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hS-K7-c7b">
-                                <rect key="frame" x="152" y="141" width="87" height="29"/>
+                                <rect key="frame" x="164" y="80" width="87" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OHm-GC-TMa">
+                                <rect key="frame" x="87" y="129" width="240" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Ritz Carlton has been one of my best Indian fine dining experiences in Bangalore. The entire experience right from the starters, service and dessert was commendable. The staff was extremely accommodating and catered to all our needs. The sheekh kebab has to be one of my favourites, which was made to absolute perfection. I can vouch that the meaning of the name Riwaz has really been inculcated by everyone at the restaurant. A special mention to Vishwesh and Abhishek for making this experience one of a kind for my family and me.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q8M-NA-E1E">
-                                <rect key="frame" x="87" y="223" width="240" height="541"/>
+                                <rect key="frame" x="87" y="466" width="240" height="302"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Ritz Carlton has been one of my best Indian fine dining experiences in Bangalore. The entire experience right from the starters, service and dessert was commendable. The staff was extremely accommodating and catered to all our needs. The sheekh kebab has to be one of my favourites, which was made to absolute perfection. I can vouch that the meaning of the name Riwaz has really been inculcated by everyone at the restaurant. A special mention to Vishwesh and Abhishek for making this experience one of a kind for my family and me.</string>
@@ -419,7 +425,7 @@
                                 </state>
                                 <connections>
                                     <action selector="ratingButton:" destination="YYd-Pu-4LP" eventType="touchUpInside" id="vGi-J9-ZMq"/>
-                                    <segue destination="Hlb-Tl-i7K" kind="show" id="6Zk-XU-nwh"/>
+                                    <segue destination="Hlb-Tl-i7K" kind="show" identifier="ratingDisplayRestaurantThree" id="6Zk-XU-nwh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obs-vH-Ryh">
@@ -433,7 +439,7 @@
                                 </state>
                                 <connections>
                                     <action selector="customerReviewDisplayButton:" destination="YYd-Pu-4LP" eventType="touchUpInside" id="Wuf-RH-qin"/>
-                                    <segue destination="EOC-9h-y32" kind="show" id="Qrf-7D-GK8"/>
+                                    <segue destination="EOC-9h-y32" kind="show" identifier="showCustomerReviewRestaurantThree" id="Qrf-7D-GK8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldi-YC-lKI">
@@ -447,7 +453,7 @@
                                 </state>
                                 <connections>
                                     <action selector="roomForImprovementButton:" destination="YYd-Pu-4LP" eventType="touchUpInside" id="PdK-zg-Rxs"/>
-                                    <segue destination="5p6-ba-b6s" kind="show" id="84V-7X-IDR"/>
+                                    <segue destination="5p6-ba-b6s" kind="show" identifier="showRoomForImprovementRestaurantThree" id="84V-7X-IDR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ritz Carlton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ey1-gi-taM">
@@ -462,11 +468,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="CT6-i9-Eic"/>
-                    <connections>
-                        <segue destination="Hlb-Tl-i7K" kind="show" id="hwo-Nc-CpY"/>
-                        <segue destination="EOC-9h-y32" kind="show" id="gY9-4y-Lpi"/>
-                        <segue destination="5p6-ba-b6s" kind="show" id="2at-hL-fh0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPE-DJ-S4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -582,7 +583,7 @@
                                 </state>
                                 <connections>
                                     <action selector="displayRoomForImprovementButton:" destination="M2O-rR-PkZ" eventType="touchUpInside" id="0ZD-M1-de4"/>
-                                    <segue destination="ZUk-bL-5bl" kind="show" id="1tZ-fO-Yhe"/>
+                                    <segue destination="ZUk-bL-5bl" kind="show" identifier="displayRoomForImprovementButton" id="1tZ-fO-Yhe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -590,9 +591,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="opU-YP-YiB"/>
-                    <connections>
-                        <segue destination="ZUk-bL-5bl" kind="show" id="zbN-Pp-V4Y"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ns9-5Q-jhi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -614,7 +612,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bNi-Pg-uGG">
-                                <rect key="frame" x="87" y="193" width="240" height="557"/>
+                                <rect key="frame" x="87" y="482" width="240" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Went to Sanchez for some Mexican food. The food was so good.
+Had chicken stuffed potato skins, fish tacos, chicken nachos, lemon ice tea and Tres leches. Everything tasted fantastic and the ambiance of the place is also beautiful.
+Just found the place to be a little bit costly but after eating the food, I really didn't mind that.
+Will definitely be visiting again.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gpp-LB-wrW">
+                                <rect key="frame" x="87" y="213" width="240" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Went to Sanchez for some Mexican food. The food was so good.
@@ -749,7 +759,6 @@ Will definitely be visiting again.</string>
                                 <state key="normal" title="Info"/>
                                 <connections>
                                     <action selector="firstRestaurantIn:" destination="p4s-Dc-uPj" eventType="touchUpInside" id="WMu-7U-Coz"/>
-                                    <segue destination="4fE-iB-Cdu" kind="show" id="fJh-7z-hLv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYg-oX-mhi">
@@ -762,7 +771,6 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="guideMyTip2:" destination="p4s-Dc-uPj" eventType="touchUpInside" id="E9W-40-x5O"/>
-                                    <segue destination="aZj-7Y-tqf" kind="show" id="TUl-xg-6q6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sanchez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vh-Ew-QoP">
@@ -782,7 +790,6 @@ Will definitely be visiting again.</string>
                                 <state key="normal" title="info"/>
                                 <connections>
                                     <action selector="secondRestaurantIn:" destination="p4s-Dc-uPj" eventType="touchUpInside" id="BXY-PW-lI2"/>
-                                    <segue destination="xmn-EP-iTu" kind="show" id="pec-cY-MIj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0A-Jo-lr1">
@@ -795,7 +802,6 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="guideMyTip3:" destination="p4s-Dc-uPj" eventType="touchUpInside" id="ngX-ge-Zja"/>
-                                    <segue destination="y3V-pk-6Nu" kind="show" id="P2I-N5-Eix"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ritz Carlton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpI-0a-p06">
@@ -815,7 +821,6 @@ Will definitely be visiting again.</string>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="thirdRestaurantIn:" destination="p4s-Dc-uPj" eventType="touchUpInside" id="L6I-6D-dDo"/>
-                                    <segue destination="Qi1-Yj-l0U" kind="show" id="drj-On-KZD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36x-o5-RjA">
@@ -828,7 +833,6 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="guideMyTip1:" destination="p4s-Dc-uPj" eventType="touchUpInside" id="Ud1-p9-oG3"/>
-                                    <segue destination="Twv-1j-V5d" kind="show" id="JBB-l1-fqx"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lgj-1E-WIT">
@@ -845,12 +849,12 @@ Will definitely be visiting again.</string>
                     </view>
                     <navigationItem key="navigationItem" id="gO1-3X-l4W"/>
                     <connections>
-                        <segue destination="4fE-iB-Cdu" kind="show" id="zBQ-vw-lr3"/>
-                        <segue destination="xmn-EP-iTu" kind="show" id="i97-VD-0a8"/>
-                        <segue destination="Qi1-Yj-l0U" kind="show" id="fbz-j6-mNe"/>
-                        <segue destination="Twv-1j-V5d" kind="show" id="bm5-xv-hws"/>
-                        <segue destination="aZj-7Y-tqf" kind="show" id="YJ4-RX-APV"/>
-                        <segue destination="y3V-pk-6Nu" kind="show" id="ZTa-rg-bXM"/>
+                        <segue destination="4fE-iB-Cdu" kind="show" identifier="firstRestaurant" id="RA3-Ki-Xgc"/>
+                        <segue destination="xmn-EP-iTu" kind="show" identifier="secondRestaurant" id="0ZV-Ae-49u"/>
+                        <segue destination="Qi1-Yj-l0U" kind="show" identifier="thirdRestaurant" id="lNa-iU-RDO"/>
+                        <segue destination="Twv-1j-V5d" kind="show" identifier="guideMyTip1" id="JWx-Fv-OVW"/>
+                        <segue destination="aZj-7Y-tqf" kind="show" identifier="guideMyTip2" id="H8g-1o-Bi8"/>
+                        <segue destination="y3V-pk-6Nu" kind="show" identifier="guideMyTip3" id="qiv-6m-4st"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWD-le-bCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -888,7 +892,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="buttonClickWithSender:" destination="AO2-XV-Y3R" eventType="touchUpInside" id="XH6-yD-8Bt"/>
-                                    <segue destination="EOC-9h-y32" kind="show" id="AxB-3k-fhz"/>
+                                    <segue destination="rmV-QT-wcZ" kind="show" identifier="submit" id="wfj-bX-phI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -898,7 +902,6 @@ Will definitely be visiting again.</string>
                     <navigationItem key="navigationItem" id="qrp-uc-xC8"/>
                     <connections>
                         <outlet property="reviewDisplay" destination="fvL-Cw-hhM" id="Ozp-H4-DRM"/>
-                        <segue destination="rmV-QT-wcZ" kind="show" id="7M9-W1-ZTR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8B-Gp-mGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -930,7 +933,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="buttonClickWithSender:" destination="IkF-Td-V7s" eventType="touchUpInside" id="h9g-Az-JgP"/>
-                                    <segue destination="BOC-pi-I4p" kind="show" id="IEd-4V-1Ou"/>
+                                    <segue destination="BOC-pi-I4p" kind="show" identifier="submit" id="IEd-4V-1Ou"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-GJ-bH7">
@@ -946,7 +949,6 @@ Will definitely be visiting again.</string>
                     <navigationItem key="navigationItem" id="jf7-Z1-p0G"/>
                     <connections>
                         <outlet property="reviewDisplay" destination="GhM-GJ-bH7" id="0qc-iI-u9m"/>
-                        <segue destination="BOC-pi-I4p" kind="show" id="Er5-xA-FuV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5r-cV-DM6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -978,7 +980,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="buttonClickWithSender:" destination="q8t-Rq-x68" eventType="touchUpInside" id="n1K-ve-JiP"/>
-                                    <segue destination="rmV-QT-wcZ" kind="show" id="M0q-kz-JFt"/>
+                                    <segue destination="EOC-9h-y32" kind="show" identifier="submit" id="zwP-xW-cw1"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aka-af-GDr">
@@ -994,7 +996,6 @@ Will definitely be visiting again.</string>
                     <navigationItem key="navigationItem" id="aYM-PA-aks"/>
                     <connections>
                         <outlet property="reviewDisplay" destination="aka-af-GDr" id="xVV-NT-jnX"/>
-                        <segue destination="EOC-9h-y32" kind="show" id="Yi2-w7-MBL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4n-F5-ywl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1026,7 +1027,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="writeReviewButton:" destination="jWa-yo-7mo" eventType="touchUpInside" id="eg1-0h-veS"/>
-                                    <segue destination="AO2-XV-Y3R" kind="show" id="2Cs-n9-FOL"/>
+                                    <segue destination="AO2-XV-Y3R" kind="show" identifier="writeReviewButton" id="2Cs-n9-FOL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Amount : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1N-Ek-nrZ">
@@ -1058,7 +1059,6 @@ Will definitely be visiting again.</string>
                     <connections>
                         <outlet property="billAmt" destination="9RI-lo-IuQ" id="tay-CF-LmS"/>
                         <outlet property="tipAmt" destination="3cl-3t-nny" id="DQQ-Ga-uoW"/>
-                        <segue destination="AO2-XV-Y3R" kind="show" id="h1k-D9-vv4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="anR-Bj-v0A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1123,7 +1123,7 @@ Will definitely be visiting again.</string>
                     <connections>
                         <outlet property="billAmt" destination="Hcl-rv-oEW" id="SN3-hC-fZK"/>
                         <outlet property="tipAmt" destination="bj4-yt-eYQ" id="fdd-no-ycF"/>
-                        <segue destination="IkF-Td-V7s" kind="show" id="Fhy-rh-D8s"/>
+                        <segue destination="IkF-Td-V7s" kind="show" identifier="writeReviewButton" id="Fhy-rh-D8s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pP7-nZ-ict" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1188,7 +1188,7 @@ Will definitely be visiting again.</string>
                     <connections>
                         <outlet property="billAmt" destination="cbs-rH-dtc" id="utl-Zp-nPF"/>
                         <outlet property="tipAmt" destination="PNu-TS-3KR" id="EC0-u9-Kk1"/>
-                        <segue destination="q8t-Rq-x68" kind="show" id="dA3-I2-lLM"/>
+                        <segue destination="q8t-Rq-x68" kind="show" identifier="writeReviewButton" id="dA3-I2-lLM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVA-6i-bij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1248,7 +1248,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="nextButton:" destination="YrP-8c-BmX" eventType="touchUpInside" id="ajM-me-Sq4"/>
-                                    <segue destination="jWa-yo-7mo" kind="show" id="7Pw-yy-hZx"/>
+                                    <segue destination="jWa-yo-7mo" kind="show" identifier="nextButton" id="7Pw-yy-hZx"/>
                                 </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kxP-SK-2S3">
@@ -1348,7 +1348,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="nextButton:" destination="LuQ-UW-WuO" eventType="touchUpInside" id="dZP-dA-w8D"/>
-                                    <segue destination="hww-TW-d1L" kind="show" id="DSd-xx-mcj"/>
+                                    <segue destination="hww-TW-d1L" kind="show" identifier="nextButton" id="DSd-xx-mcj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj4-Gd-F72">
@@ -1476,7 +1476,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="nextButton:" destination="nR8-YI-vyB" eventType="touchUpInside" id="Ne8-DG-Xxk"/>
-                                    <segue destination="hGd-7m-BjZ" kind="show" id="tXC-Xl-6Au"/>
+                                    <segue destination="hGd-7m-BjZ" kind="show" identifier="nextButton" id="tXC-Xl-6Au"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qw-uJ-LHh">
@@ -1597,7 +1597,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="buttonClickWithSender:" destination="Twv-1j-V5d" eventType="touchUpInside" id="vTq-Lq-hTF"/>
-                                    <segue destination="YrP-8c-BmX" kind="show" id="E6K-EP-TON"/>
+                                    <segue destination="YrP-8c-BmX" kind="show" identifier="submit" id="E6K-EP-TON"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="bill amt" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQA-ol-nX2">
@@ -1620,7 +1620,6 @@ Will definitely be visiting again.</string>
                     <navigationItem key="navigationItem" id="hMf-ue-Ucz"/>
                     <connections>
                         <outlet property="billAmount" destination="zQA-ol-nX2" id="bKY-fs-Adp"/>
-                        <segue destination="YrP-8c-BmX" kind="show" id="50S-yz-l7F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPa-W3-yUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1652,7 +1651,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="buttonClickWithSender:" destination="aZj-7Y-tqf" eventType="touchUpInside" id="KAf-tV-gej"/>
-                                    <segue destination="LuQ-UW-WuO" kind="show" id="5pR-gA-uHW"/>
+                                    <segue destination="LuQ-UW-WuO" kind="show" identifier="submit" id="5pR-gA-uHW"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="bill amt" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Qg-6f-I8J">
@@ -1668,7 +1667,6 @@ Will definitely be visiting again.</string>
                     <navigationItem key="navigationItem" id="302-K4-Wmd"/>
                     <connections>
                         <outlet property="billAmount" destination="3Qg-6f-I8J" id="DY7-C7-pE4"/>
-                        <segue destination="LuQ-UW-WuO" kind="show" id="yXA-x5-sqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnk-Xf-qaw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1700,7 +1698,7 @@ Will definitely be visiting again.</string>
                                 </state>
                                 <connections>
                                     <action selector="buttonClickWithSender:" destination="y3V-pk-6Nu" eventType="touchUpInside" id="eg5-6f-zD2"/>
-                                    <segue destination="nR8-YI-vyB" kind="show" id="5If-nV-FpU"/>
+                                    <segue destination="nR8-YI-vyB" kind="show" identifier="submit" id="5If-nV-FpU"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="bill amt" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9j-G3-RDO">
@@ -1716,7 +1714,6 @@ Will definitely be visiting again.</string>
                     <navigationItem key="navigationItem" id="Uzo-LH-bez"/>
                     <connections>
                         <outlet property="billAmount" destination="f9j-G3-RDO" id="yxK-rS-ZCJ"/>
-                        <segue destination="nR8-YI-vyB" kind="show" id="QBv-mm-ZzD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kv-mk-0DF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2018,11 +2015,30 @@ Hours: 7PM - 11PM</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oAR-bY-1fL">
-                                <rect key="frame" x="87" y="220" width="240" height="524"/>
+                                <rect key="frame" x="87" y="477" width="240" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">The buffet is a must try. I loved the desserts, both the indian ones as well as the pastries, mousse etc. Hygiene is maintained very well and I liked the fact that they are encouraged people to wear a mask while taking food at the counter. 
 Overall a nice experience and would like to visit again.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4sS-tS-0dF">
+                                <rect key="frame" x="87" y="211" width="240" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">The buffet is a must try. I loved 
+the desserts, both the indian 
+ones as well as the pastries, 
+mousse etc. Hygiene is 
+maintained very well and I liked 
+the fact that they are e
+ncouraged people to wear a 
+mask while taking food at the 
+counter. 
+Overall a nice experience and 
+would like to visit again.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2081,7 +2097,6 @@ Overall a nice experience and would like to visit again.</string>
                                 </state>
                                 <connections>
                                     <action selector="displayRoomForImprovementButton:" destination="jjd-QU-Dqw" eventType="touchUpInside" id="hek-B7-RVT"/>
-                                    <segue destination="DR8-dF-Go1" kind="show" id="btr-h1-X16"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2090,7 +2105,7 @@ Overall a nice experience and would like to visit again.</string>
                     </view>
                     <navigationItem key="navigationItem" id="yuB-C4-ZNY"/>
                     <connections>
-                        <segue destination="DR8-dF-Go1" kind="show" id="lZ0-4w-2pz"/>
+                        <segue destination="DR8-dF-Go1" kind="show" identifier="showRoomForImprovementRestaurantOne" id="OZ8-gC-sMU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ4-GH-hAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2138,22 +2153,11 @@ Overall a nice experience and would like to visit again.</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="CRi-qZ-uV5"/>
-        <segue reference="btr-h1-X16"/>
-        <segue reference="drj-On-KZD"/>
-        <segue reference="i97-VD-0a8"/>
-        <segue reference="zBQ-vw-lr3"/>
-        <segue reference="P2I-N5-Eix"/>
-        <segue reference="YJ4-RX-APV"/>
-        <segue reference="bm5-xv-hws"/>
-        <segue reference="QBv-mm-ZzD"/>
-        <segue reference="yXA-x5-sqQ"/>
-        <segue reference="50S-yz-l7F"/>
-        <segue reference="h1k-D9-vv4"/>
-        <segue reference="1tZ-fO-Yhe"/>
+        <segue reference="5o5-3i-ER5"/>
+        <segue reference="nlj-bT-nSN"/>
         <segue reference="gOY-rj-csY"/>
-        <segue reference="yNb-tl-iZN"/>
+        <segue reference="84V-7X-IDR"/>
         <segue reference="Qrf-7D-GK8"/>
-        <segue reference="6Zk-XU-nwh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="1280" height="900"/>
