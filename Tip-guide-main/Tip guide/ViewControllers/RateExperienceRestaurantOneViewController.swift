@@ -48,7 +48,7 @@ public class RateExperienceRestaurantOneViewController : UIViewController {
         }
         
         let perc = calculation(n: &x)
-        let tipamt = bill % perc
+        tipamt = bill % perc
 
     }
     
